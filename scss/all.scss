@@ -552,3 +552,71 @@ section.contacts {
 		}
 	}
 }
+/*-----------------Section What About Us Say---------------------*/
+.social-about {
+	background: #f3f3f3;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	.title_social-abot {
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
+		@media (max-width: $screen-xs-max) {
+			@include name-section(3px, $color-yellow, 24px, $font-GothamLight, $text-dark-grey, $text-transform-up);
+		}
+	}
+}
+.tab-social-content {
+	margin-top: 55px;
+	max-height: 390px;
+	overflow: auto;
+}
+/*--------Make Enroll Table-------*/
+.make-enroll-table{
+	padding: 90px 0px;
+	.make-enroll-caption {
+		border-left: 3px solid $color-yellow;
+		@include name-section(3px, $color-yellow, 36px, $font-GothamBlack, $text-dark-grey, none);
+		@media (max-width: $screen-xs-max) {
+			@include name-section(3px, $color-yellow, 24px, $font-GothamBlack, $text-dark-grey, none);
+		}
+	}
+}
+.table {
+	margin-top: 40px;
+	border-spacing: 20px 5px !important;
+	border-collapse: separate !important;
+	td {
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		border-radius: 10px;
+		text-align: center;
+		border: 0px !important;
+		padding: 5px 10px !important;
+		line-height: 35px !important;
+		font: 13px GothamProBold;
+		color: #fff;
+		&:hover {
+			background: #d43f3a;
+			cursor: pointer;
+		}
+	}
+	th {
+		@extend td;
+		color: #333333;
+		font: 15px GothamProRegular;
+		&:hover {
+			background: none;
+			cursor: default;
+		}
+
+	}
+}
+/*---Color of Buttons----*/
+.purple {
+	background: #7869bf;
+}
+.blue {
+	background: #4c82d9;
+}
+.green {
+	background: #74b336;
+}

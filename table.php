@@ -1,81 +1,4 @@
-<!-- Page  Horror Laboratory ("Главная и лаборатория(эта одна и та же страница Лаборатория, только отличается картинка в хедере")) -->
-
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="libs/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-    <link rel="stylesheet" href="libs/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="libs/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/all.css">
-    <script src="js/js.js"></script>
-    <script type="text/javascript" src="http://vk.com/js/api/openapi.js?122"></script>
-    <title>KQ Квест-комната</title>
-</head>
-<body>
-    <section class="gallery">
-        <div class="container">
-            <div class="col-md-12 photos_title">
-                <p>
-                    Фотографии
-                </p>
-            </div>
-            <div class="rowPhotos">
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                    <a class="fancybox" rel="group" href="img/gallery/big_img_1.jpg"><img src="img/gallery/small_img_1.jpg" alt="" class="img-responsive" /></a>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                    <a class="fancybox" rel="group" href="img/gallery/big_img_2.jpg"><img src="img/gallery/small_img_2.jpg" alt="" class="img-responsive"/></a>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                    <a class="fancybox" rel="group" href="img/gallery/big_img_3.jpg"><img src="img/gallery/small_img_3.jpg" alt="" class="img-responsive" /></a>
-                </div>
-                <div class="col-md-3 col-lg-3 col-sm-3 col-xs-6">
-                    <a class="fancybox" rel="group" href="img/gallery/big_img_4.jpg"><img src="img/gallery/small_img_4.jpg" alt="" class="img-responsive"/></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="people_say">
-        <div class="container">
-            <div class="col-md-8 people_title">
-                <p>
-                   Что о нас говорят
-                </p>
-            </div>
-            <div class="col-md-4">
-                <button class="more"> Показать еще отзывы</button>
-            </div>
-            <div class="row">
-                <div class="col-md-4 tab-social-content">
-                    <div id="vk_post_168678199_682"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?122"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_168678199_682", 168678199, 682, 'lP_eEznE08Gjdid7FEMhjDXk-oYv', {})) setTimeout(arguments.callee, 50);  }());</script>
-                </div>
-                <div class="col-md-4 tab-social-content">
-                    <div id="vk_post_-119114574_32"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?122"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_-119114574_32", -119114574, 32, 'udlnhFh07TdnkxPMTLYbWrfXKFvo', {})) setTimeout(arguments.callee, 50);  }());</script>
-                </div>
-                <div class="col-md-4 tab-social-content">
-                    <div id="vk_post_168678199_679"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?122"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_168678199_679", 168678199, 679, 'qxqdGn0nfFKo3Cr44JruSPVYOQWM', {})) setTimeout(arguments.callee, 50);  }());</script>
-                </div>
-            </div>
-            <div class="row hide-row">
-                <div class="col-md-4 tab-social-content">
-                    <div id="vk_post_168678199_676"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?122"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_168678199_676", 168678199, 676, '6KHtlMnOccu5WRSAM4XwXtvDVYe8', {})) setTimeout(arguments.callee, 50);  }());</script>
-                </div>
-                <div class="col-md-4 tab-social-content">
-                    <div id="vk_post_168678199_675"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?122"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_168678199_675", 168678199, 675, 'Yp_43h46VWemb__JUNdCr1c2F7j0', {})) setTimeout(arguments.callee, 50);  }());</script>
-                </div>
-                <div class="col-md-4 tab-social-content">
-                    <div id="vk_post_168678199_669"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?122"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_168678199_669", 168678199, 669, 'ajtL1RvTl01FOt-wNEn7tfeARzmK', {})) setTimeout(arguments.callee, 50);  }());</script>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="make-enroll-table">
+ <section class="make-enroll-table">
         <div class="container">
             <div class="col-md-12 make-enroll-caption">
                 <p>
@@ -339,7 +262,7 @@
                         </div>
                     </div>
                     <div class="form-group text-center">
-                        <button type="submit" class="btn btn-default form_button_up" id="modal_submit">
+                        <button type="submit" class="btn btn-default form_button_up" id="modal_enroll">
                             <a href="thanks.html">Забронировать комнату </a>
                         </button>
                     </div>
@@ -356,5 +279,3 @@
     </div>
 
     </div>
-</body>
-</html>

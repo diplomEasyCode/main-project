@@ -56,6 +56,7 @@ header {
 
 /*-------------------Section Rules And Accordion -----------------------*/
 .rules {
+	padding-top: 3%;
 	.title_rules {
 		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		@media (max-width: $screen-xs-max) {
@@ -211,9 +212,9 @@ header {
 	margin-top: 100px;
 	margin-bottom: 100px;
 	.photos_title {
-		@include name-section(3px, $color-yellow, 36px, $font-GothamBlack, $text-dark-grey, none);
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		@media (max-width: $screen-xs-max) {
-			@include name-section(3px, $color-yellow, 24px, $font-GothamBlack, $text-dark-grey, none);
+			@include name-section(3px, $color-yellow, 24px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		}
 	}
 	.rowPhotos {
@@ -230,13 +231,12 @@ header {
 .people_say {
 	@include inline-block;
 	background: $color-grey;
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding: 3% 0;
 	.people_title {
 		border-left: 3px solid $color-yellow;
-		@include name-section(3px, $color-yellow, 36px, $font-GothamBlack, $text-dark-grey, none);
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		@media (max-width: $screen-xs-max) {
-			@include name-section(3px, $color-yellow, 24px, $font-GothamBlack, $text-dark-grey, none);
+			@include name-section(3px, $color-yellow, 24px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		}
 	}
 	.more {
@@ -579,9 +579,9 @@ section.contacts {
 	overflow: auto;
 	.make-enroll-caption {
 		border-left: 3px solid $color-yellow;
-		@include name-section(3px, $color-yellow, 36px, $font-GothamBlack, $text-dark-grey, none);
+		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		@media (max-width: $screen-xs-max) {
-			@include name-section(3px, $color-yellow, 24px, $font-GothamBlack, $text-dark-grey, none);
+			@include name-section(3px, $color-yellow, 24px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		}
 
 			span{

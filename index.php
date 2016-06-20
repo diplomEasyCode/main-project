@@ -22,38 +22,21 @@
 		</div>
 		<div class="rowRooms">
 			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 left_laboratory">
-				<a href="laboratory.html">
+				<a href="laboratory.php">
 					<div class="laboratory"></div>
 				</a>
 			</div>
 			<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 right_kruger">
-				<a href="krueger.html">
+				<a href="krueger.php">
 					<div class="kruger"></div>
 				</a>
 			</div>
 		</div>
 	</div>
 </section>
-<section class="people_say">
-	<div class="container">
-		<div class="col-md-12 people_title">
-			<p>
-				Что о нас говорят
-			</p>
-		</div>
-		<div class="row">
-			<div class="col-md-4 tab-social-content">
-				<div id="vk_post_168678199_682"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_168678199_682", 168678199, 682, 'lP_eEznE08Gjdid7FEMhjDXk-oYv', {height: 390})) setTimeout(arguments.callee, 50);  }());</script>
-			</div>
-			<div class="col-md-4 tab-social-content">
-				<div id="vk_post_-119114574_32"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_-119114574_32", -119114574, 32, 'udlnhFh07TdnkxPMTLYbWrfXKFvo', {height: 390})) setTimeout(arguments.callee, 50);  }());</script>
-			</div>
-			<div class="col-md-4 tab-social-content">
-				<div id="vk_post_-119114574_29"></div><script type="text/javascript">  (function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//vk.com/js/api/openapi.js?122"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'vk_openapi_js'));  (function() {    if (!window.VK || !VK.Widgets || !VK.Widgets.Post || !VK.Widgets.Post("vk_post_-119114574_29", -119114574, 29, 'jcB-LTpYYUoq9gOYCMaPNgrtW77n', {height: 390})) setTimeout(arguments.callee, 50);  }());</script>
-			</div>
-		</div>
-	</div>
-</section>
+
+<? include "reviews.php";?>
+
 <section class="rules">
 	<div class="container">
 		<div class="col-md-12 col-sm-12 col-xs-12 title_rules">
@@ -165,64 +148,8 @@
 	</div>
 </section>
 
-<section class="write_letter">
-	<div class="container">
-		<div class="col-md-8 questions text-right">
-			<h2>У Вас остались вопросы?</h2>
-			<p>
-				Вы можете позвонить нам по телефону
-				<span> +38 (063) 10-70-380</span>
-				<br>или написать письмо, нажав на кнопку справа
-			</p>
-		</div>
-		<div class="col-md-4 button_write text-center">
-			<a href="#myModal" data-toggle="modal"> Написать письмо</a>
-		</div>
-	</div>
 
-</section>
-
-
-<!-------------------MODAL---------------- -->
-
-<div class="modal fade" id="myModal" tabindex="-1">
-	<div class="container popUp">
-		<div class="col-md-12 col-sm-12 col-xs-12 text-right close" data-dismiss="modal">
-
-		</div>
-		<div class="col-md-12 col-sm-12 col-xs-12 content_modal">
-			<p class="title_popUp">
-				<span>Написать письмо</span>
-			</p>
-			<form action="" role="form">
-				<div class="col-md-6 col-sm-12 form_name">
-					<div class="form-group">
-						<input type="text" class="form-control" id="name" placeholder="Ваше имя" name="name">
-					</div>
-				</div>
-				<div class="col-md-6  col-sm-12 form_email">
-					<div class="form-group">
-						<input type="email" class="form-control" id="email" placeholder="Ваш E-mail" name="email">
-					</div>
-				</div>
-				<textarea class="form-control" rows="5" name="commit" placeholder="Что Вы хотите написать?"></textarea>
-				<div class="form-group text-center">
-					<button type="submit" class="btn btn-default" id="modal_submit">
-						Отправить письмо
-					</button>
-				</div>
-			</form>
-			<div class="confidentiality text-center">
-				<p>
-					Введенные данные строго конфиденциальны.
-					<br>
-					<a href="https://yandex.ru/legal/confidential/" target="blank"> Политика конфиденциальности </a>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-
+<? include "write_letter.php";?>
 
 
 </body>

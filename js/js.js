@@ -36,71 +36,114 @@ $(document).on('ready', function() {
         });
 
     /*----------------------Pop Up---------------------*/
-        $("td").on('click', function(){
+        $(".table>tbody>tr>td").on('click', function(){
             var TimeData;
             TimeData = $(this).text();
             $("#time").attr('value',TimeData);
             if ($(this).hasClass('firstDate')) {
-                    var DateToEnroll = $('th:first').text();
+                    var DateToEnroll = $('.table>tbody>tr>th:first').text();
                     $('#day').attr('value', DateToEnroll);
                 }
             else if ($(this).hasClass('secondDate')) {
-                    var DateToEnroll = $('th:nth-child(2)').text();
+                    var DateToEnroll = $(".table>tbody>tr>th:nth-child(2)").text();
                     $('#day').attr('value', DateToEnroll);
                 }
             else if ($(this).hasClass('thirdDate')) {
-                var DateToEnroll = $('th:nth-child(3)').text();
+                var DateToEnroll = $('.table>tbody>tr>th:nth-child(3)').text();
                 $('#day').attr('value', DateToEnroll);
             }
             else if ($(this).hasClass('fouthDate')) {
-                var DateToEnroll = $('th:nth-child(4)').text();
+                var DateToEnroll = $('.table>tbody>tr>th:nth-child(4)').text();
                 $('#day').attr('value', DateToEnroll);
             }
             else if ($(this).hasClass('fifthDate')) {
-                var DateToEnroll = $('th:nth-child(5)').text();
+                var DateToEnroll = $('.table>tbody>tr>th:nth-child(5)').text();
                 $('#day').attr('value', DateToEnroll);
             }
             else if ($(this).hasClass('sixDate')) {
-                var DateToEnroll = $('th:nth-child(6)').text();
+                var DateToEnroll = $('.table>tbody>tr>th:nth-child(6)').text();
                 $('#day').attr('value', DateToEnroll);
             }
         })
+    $(".table2>tbody>tr>td").on('click', function(){
+        var TimeData;
+        TimeData = $(this).text();
+        $("#time").attr('value',TimeData);
+        if ($(this).hasClass('firstDate')) {
+            var DateToEnroll = $('.table2>tbody>tr>th:first').text();
+            $('#day').attr('value', DateToEnroll);
+        }
+        else if ($(this).hasClass('secondDate')) {
+            var DateToEnroll = $(".table2>tbody>tr>th:nth-child(2)").text();
+            $('#day').attr('value', DateToEnroll);
+        }
+        else if ($(this).hasClass('thirdDate')) {
+            var DateToEnroll = $('.table2>tbody>tr>th:nth-child(3)').text();
+            $('#day').attr('value', DateToEnroll);
+        }
+        else if ($(this).hasClass('fouthDate')) {
+            var DateToEnroll = $('.table2>tbody>tr>th:nth-child(4)').text();
+            $('#day').attr('value', DateToEnroll);
+        }
+        else if ($(this).hasClass('fifthDate')) {
+            var DateToEnroll = $('.table2>tbody>tr>th:nth-child(5)').text();
+            $('#day').attr('value', DateToEnroll);
+        }
+        else if ($(this).hasClass('sixDate')) {
+            var DateToEnroll = $('.table2>tbody>tr>th:nth-child(6)').text();
+            $('#day').attr('value', DateToEnroll);
+        }
+    })
     /*--------------------Create Table-----------------*/
-    function getWeekDay(date) {
-        var days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
-
-        return days[date.getDay()];
-    }
-    function DateDays(date) {
-        var dd = date.getDate();
-        return dd;
-    }
-    function getMounth(date) {
-        var days = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
-
-        return days[date.getMonth()];
-    }
-
-
     var date = new Date();
-    function creTable() {
-            $('.table').append('<tr></tr>');
-            for(j=0;j<=5;j++) {
-                var options = {
-                    weekday: 'short',
-                    month: 'long',
-                    day: 'numeric'
-                };
-                var myDate = new Date();
-                var dayOfMonth = myDate.getDate();
-                myDate.setDate(dayOfMonth +j);
-                $('.table > tbody > tr:first').append('<th>'/*+ getWeekDay(date) +', ' + DateDays(date) +' ' + getMounth(date) +*/+ myDate.toLocaleString("ru", options) +'</th>');
-            }
+    function creTable1() {
+        $('.table').append('<tr></tr>');
+        for(j=0;j<=5;j++) {
+            var options = {
+                weekday: 'short',
+                month: 'long',
+                day: 'numeric'
+            };
+            var myDate = new Date();
+            var dayOfMonth = myDate.getDate();
+            myDate.setDate(dayOfMonth +j);
+            $('.table > tbody > tr:first').append('<th>'+ myDate.toLocaleString("ru", options) +'</th>');
+        }
     }
-    creTable();
-
-
-
-
+    creTable1();
+    var date = new Date();
+    function creTable2() {
+        $('.table2').append('<tr></tr>');
+        for(j=6;j<=11;j++) {
+            var options = {
+                weekday: 'short',
+                month: 'long',
+                day: 'numeric'
+            };
+            var myDate = new Date();
+            var dayOfMonth = myDate.getDate();
+            myDate.setDate(dayOfMonth +j);
+            $('.table2 > tbody > tr:first').append('<th>'+ myDate.toLocaleString("ru", options) +'</th>');
+        }
+    }
+    creTable2();
+    /*-------------------More Reviews-------------------*/
+    $('.people_say .more').on('click', function(e){
+        e.preventDefault();
+        $('.people_say .hide-row').show(1000);
+    })
+    /*-------------------Slide Naviation----------------*/
+    $('.next-slide').on('click', function(){
+        $('.next-slide').addClass('disabled-button');
+        $('.prev-slide').removeClass('disabled-button');
+        $('.class-1').hide(1000);
+        $('.class-2').show(1000);
+    })
+    $('.prev-slide').on('click', function(){
+        $('.prev-slide').addClass('disabled-button');
+        $('.next-slide').removeClass('disabled-button');
+        $('.class-2').hide(1000);
+        $('.class-1').show(1000);
+    })
 
 });

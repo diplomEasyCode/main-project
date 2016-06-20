@@ -242,6 +242,7 @@ header {
 	.more {
 		@include button($color-yellow, $color-yellow, $text-button, 7px, $text-transform-up);
 	}
+
 }
 
 /*-------------------Modal -----------------------*/
@@ -566,17 +567,57 @@ section.contacts {
 }
 .tab-social-content {
 	margin-top: 55px;
-	max-height: 390px;
-	overflow: auto;
+	//max-height: 390px;
+	//overflow: auto;
+}
+.hide-row {
+	display: none;
 }
 /*--------Make Enroll Table-------*/
 .make-enroll-table{
 	padding: 90px 0px;
+	overflow: auto;
 	.make-enroll-caption {
 		border-left: 3px solid $color-yellow;
 		@include name-section(3px, $color-yellow, 36px, $font-GothamBlack, $text-dark-grey, none);
 		@media (max-width: $screen-xs-max) {
 			@include name-section(3px, $color-yellow, 24px, $font-GothamBlack, $text-dark-grey, none);
+		}
+
+			span{
+				float: right;
+				width: 41px;
+				height: 41px;
+				border: 3px solid #ebc339;
+				border-radius: 41px;
+				padding-left: 8px;
+				vertical-align: super;
+				color: #ebc339;
+				font-family: monospace;
+				font-size: 28px;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+
+	}
+	.pries {
+		background: #f3f3f3;
+		line-height: 100px;
+		p{
+			margin-bottom: 0px;
+		}
+		span {
+			width: 25px;
+			height: 25px;
+			display: inline-block;
+			background: #f26f55;
+			border-radius: 25px;
+		}
+		b {
+			font: 15px GothamProRegular;
+			padding: 0px 15px;
+			color: #333333;
+			vertical-align: super;
 		}
 	}
 }
@@ -610,17 +651,24 @@ section.contacts {
 
 	}
 }
+.table2 {
+	@extend .table;
+}
 /*---Color of Buttons----*/
 .purple {
-	background: #7869bf;
+	background: #7869bf !important;
 }
 .blue {
-	background: #4c82d9;
+	background: #4c82d9 !important;
 }
 .green {
-	background: #74b336;
+	background: #74b336 !important;
 }
 .gray {
-	background: f3f3f3;
+	background: #f3f3f3 !important;
 	color: #999999;
+}
+.disabled-button {
+	border: 3px solid #d2d2d2 !important;
+	color: #d2d2d2 !important;
 }

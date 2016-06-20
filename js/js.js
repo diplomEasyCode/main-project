@@ -145,4 +145,8 @@ $(document).on('ready', function() {
         $('.class-1').show(1000);
     })
 
+
+    /*-------------------thanks page----------------*/
+    $('')
+
 });

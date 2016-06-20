@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/all.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<title>KQ Квест-комната</title>
-	<script src="../js/js.js" async type="text/javascript"></script>
+	<script src="js/js.js" type="text/javascript"></script>
 </head>
 <body>
 	<header>

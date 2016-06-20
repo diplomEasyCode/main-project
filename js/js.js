@@ -10,18 +10,9 @@ $(document).on('ready', function() {
        
     });
 
-
-    /*----------------Gallery -------------------*/
-    $(".fancybox")
-        .attr('rel', 'gallery')
-        .fancybox({
-            padding : 7
-        });
-
-
     /*----------------AJAX Send Form -------------------*/
-        $("#modal_submit").on('submit', function(e) {
-    		e.preventDefault();
+           $('#modal_submit').on('click', function(e) {
+            e.preventDefault();
             var FormData;
             FormData = $(this).serialize(); 
             console.log(FormData);
@@ -30,16 +21,15 @@ $(document).on('ready', function() {
             url: "../send.php", 
             data: FormData,
             success: function() {
-                   alert("Your message has been sent!");
+                   alert("Ваше письмо было отправлено!");
             }
             });
         });
 
-
-
-
-
-
-
-
+    /*----------------Gallery -------------------*/
+    $(".fancybox")
+        .attr('rel', 'gallery')
+        .fancybox({
+            padding : 7
+        });
 });

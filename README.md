@@ -1,2 +1,2 @@
-# main-project
-diplom EasyCode
+# project
+project easycode

@@ -13,6 +13,44 @@
 	<title>KQ Квест-комната</title>
 </head>
 <body>
+
+<header class="index-header">
+
+	<div class="container">
+		<div class="header-board">
+			<div class="row">
+				<div class="col-md-1"><a href="index.html"><img src="img/header/logo.png" alt="logo"></a></div>
+				<div class="col-md-2"></div>
+				<div class="col-md-2"><a href="laboratory.html"><p>КВЕСТ-КОМНАТЫ</p></a></div>
+				<div class="col-md-2"><a href="#"><p>СЕРТИФИКАТ</p></a></div>
+				<div class="col-md-1"><a href="#"><p>АКЦИИ</p></a></div>
+				<div class="col-md-2"><a href="contacts.html"><p>КОНТАКТЫ</p></a></div>
+				<div class="col-md-2"><p>(063) 10-70-380</p></div>
+			</div>
+		</div>
+
+		<div class="header-body">
+			<h1>
+				Квест-комнаты в Харькове<br>
+				— это <span class="new-age">развлечение нового поколения</span>
+			</h1>
+			<h2>
+				Разгадывайте головоломки, воспользуйтесь всеми доступными предметами,<br class="none">
+				решите все задачи и <b>откройте дверь за 60 минут</b>
+			</h2>
+
+			<a href="#" class="choice">
+				<p>Выбрать квест-комнату</p>
+			</a>
+
+			<a href="#" class="how">
+				<p>Как играть?</p>
+			</a>
+		</div>
+
+	</div>
+</header>
+
 <section class="pick_room" id="pick_room">
 	<div class="container">
 		<div class="col-md-12 room_title">

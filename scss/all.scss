@@ -716,8 +716,7 @@ a:focus{
 /*-------------------Section Write Letter -----------------------*/
 .write_letter {
 	background: $color-yellow;
-	@include inline-block;
-	.questions {
+		.questions {
 		color: $text-dark-grey;
 		margin: 5% 0;
 		@media (max-width: $screen-sm-max) {
@@ -761,7 +760,6 @@ a:focus{
 
 /*-------------------Section Gallery -----------------------*/
 .gallery {
-	@include inline-block;
 	background: $color-white;
 	margin: 3% 0;
 	.photos_title {
@@ -837,7 +835,7 @@ a:focus{
 		}
 		.form-control:focus {
 			box-shadow: none;
-			border: 2px solid #c74040;
+			border: 1px solid $color-dark-grey;
 		}
 		form {
 			margin-top: 9%;

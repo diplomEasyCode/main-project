@@ -9,7 +9,7 @@
 			<p class="title_popUp">
 				<span>Написать письмо</span>
 			</p>
-			<form action="" role="form">
+			<form action="" role="form" >
 				<div class="col-md-6 col-sm-12 form_name">
 				   <div class="form-group">
 				      <input type="text" class="form-control" id="name" placeholder="Ваше имя" name="name">

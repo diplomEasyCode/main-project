@@ -19,9 +19,91 @@
     <title>Крюгер</title>
 </head>
 <body>
+<header class="krueger-header">
+    <div class="container">
+    <? include "header_board.php";?>
+  <div class="header-body">
+            <div class="row">
+                <div class="col-md-8">
+
+                    <img class="krueg-img" src="img/header/krueger/krueg-text.png" alt="#">
+                    <p class="text-about-krueger">
+                        Жителей нашего города преследует один и тот же кошмар: во снах за ними<br class="none">
+                        крадется жуткий, обезображенный убийца — Фредди Крюгер.<br class="none">
+                        Они могут защитить друг друга наяву, во сне же — остаются один на один<br class="none">
+                        с ожившим кошмаром, и шансы спастись стремительно приближаются к нулю…<br class="none">
+                        Единственный способ защититься - побороть его во сне<br class="none">
+                        и проснуться за 60 минут...
+                    </p>
+
+                    <a href="#reviews" class="button1">
+                        <p>ОТЗЫВЫ О КОМНАТЕ</p>
+                    </a>
+
+                    <a href="#enroll" class="button2">
+                        <p>ЗАПИСАТЬСЯ НА ИГРУ</p>
+                    </a>
+
+                </div>
+                <div class="col-md-4">
+
+                    <p class="top-footer-box">
+                        <img class="star-footer" src="img/header/lab/star.png" alt="#">
+                        <span class="number-footer">9.1</span>
+                    </p>
+                    <p class="top-footer">Рейтинг на основе<br>3 оценок</p>
+                    <p class="time">00:48</p>
+                    <p class="time-text">Среднее время<br>прохождения</p>
+
+                    <a class="appreciate" href="#">
+                        <p>
+                            ОЦЕНИТЬ КОМНАТУ
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</header>
 <? include "Gallery.php";?>
 <? include "Reviews_with_button.php";?>
 <? include "table.php";?>
 <? include "write_letter.php";?>
+
+<footer class="krueger-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+
+                <img class="foot-img-lab" src="img/header/lab/logo-lab.png" alt="#">
+
+                <p class="footer-text">
+                    Очнулись с друзьями в помещении... Заперто!<br>
+                    Огляделись вокруг - интструменты, халаты, хирургические инструмиенты.<br>
+                    Что же это? Операционная, логово маньяка или подпольная больница?<br>
+                    Таймер начал отсчёт, и лучше бы успеть...<br>
+                </p>
+
+                <a href="laboratory.php">
+                    <p>
+                        ПОДРОБНЕЕ
+                    </p>
+                </a>
+
+            </div>
+            <div class="col-md-4">
+
+                <div class="top-footer-box">
+                    <img class="star-footer" src="img/header/lab/star.png" alt="#">
+                    <p class="number-footer">9.1</p>
+                    <p class="top-footer">Рейтинг на основе<br>3 оценок</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

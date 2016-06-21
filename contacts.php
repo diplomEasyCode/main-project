@@ -16,17 +16,7 @@
 
 	<header class="contacts-header">
 		<div class="container">
-			<div class="header-board">
-				<div class="row">
-					<div class="col-md-1"><a href="index.html"><img src="img/header/logo.png" alt="logo"></a></div>
-					<div class="col-md-2"></div>
-					<div class="col-md-2"><a href="laboratory.html"><p>КВЕСТ-КОМНАТЫ</p></a></div>
-					<div class="col-md-2"><a href="#"><p>СЕРТИФИКАТ</p></a></div>
-					<div class="col-md-1"><a href="#"><p>АКЦИИ</p></a></div>
-					<div class="col-md-2"><a href="contacts.html"><p>КОНТАКТЫ</p></a></div>
-					<div class="col-md-2"><p>(063) 10-70-380</p></div>
-				</div>
-			</div>
+			<? include "header_board.php";?>
 		</div>
 	</header>
 

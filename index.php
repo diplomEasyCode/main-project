@@ -17,17 +17,7 @@
 <header class="index-header">
 
 	<div class="container">
-		<div class="header-board">
-			<div class="row">
-				<div class="col-md-1"><a href="index.html"><img src="img/header/logo.png" alt="logo"></a></div>
-				<div class="col-md-2"></div>
-				<div class="col-md-2"><a href="laboratory.html"><p>КВЕСТ-КОМНАТЫ</p></a></div>
-				<div class="col-md-2"><a href="#"><p>СЕРТИФИКАТ</p></a></div>
-				<div class="col-md-1"><a href="#"><p>АКЦИИ</p></a></div>
-				<div class="col-md-2"><a href="contacts.html"><p>КОНТАКТЫ</p></a></div>
-				<div class="col-md-2"><p>(063) 10-70-380</p></div>
-			</div>
-		</div>
+		<? include "header_board.php";?>
 
 		<div class="header-body">
 			<h1>
@@ -39,11 +29,11 @@
 				решите все задачи и <b>откройте дверь за 60 минут</b>
 			</h2>
 
-			<a href="#" class="choice">
+			<a href="#pick_room" class="choice">
 				<p>Выбрать квест-комнату</p>
 			</a>
 
-			<a href="#" class="how">
+			<a href="#rules" class="how">
 				<p>Как играть?</p>
 			</a>
 		</div>
@@ -75,7 +65,7 @@
 
 <? include "reviews.php";?>
 
-<section class="rules">
+<section class="rules" id="rules">
 	<div class="container">
 		<div class="col-md-12 col-sm-12 col-xs-12 title_rules">
 			<p>

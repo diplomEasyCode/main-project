@@ -763,8 +763,7 @@ a:focus{
 .gallery {
 	@include inline-block;
 	background: $color-white;
-	margin-top: 100px;
-	margin-bottom: 100px;
+	margin: 3% 0;
 	.photos_title {
 		@include name-section(3px, $color-yellow, 36px, $font-GothamLight, $text-dark-grey, $text-transform-up);
 		@media (max-width: $screen-xs-max) {

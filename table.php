@@ -1,4 +1,4 @@
- <section class="make-enroll-table">
+ <section class="make-enroll-table" id="enroll">
         <div class="container">
             <div class="col-md-12 make-enroll-caption">
                 <p>

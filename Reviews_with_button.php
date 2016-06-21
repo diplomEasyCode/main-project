@@ -1,4 +1,4 @@
-    <section class="people_say">
+    <section class="people_say" id="reviews">
         <div class="container">
             <div class="col-md-8 people_title">
                 <p>

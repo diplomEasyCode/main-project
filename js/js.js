@@ -12,10 +12,6 @@ $(document).on('ready', function() {
 
     /*----------------AJAX Send Form -------------------*/
            $('#modal_submit').on('click', function(e) {
-               var name = $('input#name').val();
-               var email = $('input#email').val();
-               var commit = $('input#commit').val();
-               if (name !="" && email !="") {
                    e.preventDefault();
                    var FormData;
                    FormData = $(this).serialize();
@@ -28,19 +24,8 @@ $(document).on('ready', function() {
                            alert("Ваше письмо было отправлено!");
                        }
                    });
-               } else {
-                   e.preventDefault();
-                   $('input#name, input#email, textarea').css('border','2px solid #c74040');
-                   alert('Заполните все поля');
-                   $('input#name, input#email, textarea').css('border','1px solid #ccc');
-               }
+           });
 
-
-
-        });
-
-
-    /*------RegExsp-------*/
 
 
     /*----------------Gallery -------------------*/

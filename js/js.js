@@ -145,10 +145,8 @@ $(document).on('ready', function() {
         $('.next-slide').removeClass('disabled-button');
         $('.class-2').hide(1000);
         $('.class-1').show(1000);
-    })
+    });
 
 
-    /*-------------------thanks page----------------*/
-    $('')
 
 });
